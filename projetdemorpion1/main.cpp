@@ -1,12 +1,16 @@
-#include <QGuiApplication>
-#include <QQmlApplicationEngine>
+import QtQuick 2.5
+import QtQuick.Controls 1.4
+import QtQuick.Dialogs 1.2
 
-int main(int argc, char *argv[])
-{
-    QGuiApplication app(argc, argv);
+ApplicationWindow {
+    visible: true
+    width: 640
+    height: 480
+    title: qsTr("Morpion game")
 
-    QQmlApplicationEngine engine;
-    engine.load(QUrl(QStringLiteral("qrc:/main.qml")));
+    MainForm {
+        anchors.fill : parent
+        id : fondM
+    }
 
-    return app.exec();
 }
