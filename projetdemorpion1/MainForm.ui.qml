@@ -6,6 +6,7 @@ Item {
     id: fondM
     width: 640
     height: 480
+    property alias c3: c3
     property alias fondM: fondM
     property alias rectTopLeft: rectTopLeft
     property alias mouseArea5: mouseArea5
@@ -13,7 +14,6 @@ Item {
     property alias mouseArea6: mouseArea6
     property alias rectBottomLeft: rectBottomLeft
     property alias mouseArea7: mouseArea7
-    property alias rectCenter1: rectCenter1
     property alias mouseArea8: mouseArea8
     property alias mouseArea2: mouseArea2
     property alias rectCenterR: rectCenterR
@@ -34,12 +34,12 @@ Item {
         source: "IMG_0763(1).JPG"
 
         Rectangle {
-            id: rectCenter
+            id: b2
             x: 280
             y: 200
             width: 80
             height: 80
-            color: "#00000000"
+            color: "#000000"
             border.color: "#0e0c0c"
             border.width: 5
             anchors.verticalCenter: parent.verticalCenter
@@ -53,29 +53,12 @@ Item {
         }
 
         Rectangle {
-            id: rectCenterL
-            x: 190
-            y: 195
-            width: 80
-            height: 80
-            color: "#00000000"
-            MouseArea {
-                id: mouseArea1
-                width: 80
-                height: 80
-            }
-            border.color: "#0e0c0c"
-            anchors.verticalCenter: parent.verticalCenter
-            border.width: 5
-        }
-
-        Rectangle {
-            id: rectCenterR
+            id: b3
             x: 350
             y: 194
             width: 80
             height: 80
-            color: "#00000000"
+            color: "#000000"
             MouseArea {
                 id: mouseArea2
                 width: 80
@@ -87,12 +70,12 @@ Item {
         }
 
         Rectangle {
-            id: rectBottomCenter
+            id: c2
             x: 3
             y: 270
             width: 80
             height: 80
-            color: "#00000000"
+            color: "#000000"
             MouseArea {
                 id: mouseArea3
                 width: 80
@@ -104,12 +87,12 @@ Item {
         }
 
         Rectangle {
-            id: rectTopCenter
+            id: a2
             x: 284
             y: 110
             width: 80
             height: 80
-            color: "#00000000"
+            color: "#000000"
             MouseArea {
                 id: mouseArea4
                 width: 80
@@ -121,12 +104,28 @@ Item {
         }
 
         Rectangle {
-            id: rectTopLeft
+            id: a1
             x: 190
             y: 520
             width: 80
             height: 80
-            color: "#00000000"
+            gradient: Gradient {
+                GradientStop {
+                    position: 0
+                    color: "#ffffff"
+                }
+
+                GradientStop {
+                    position: 0.395
+                    color: "#d5e877"
+                }
+
+                GradientStop {
+                    position: 1
+                    color: "#000000"
+                }
+
+            }
             anchors.left: parent.left
             anchors.leftMargin: 190
             anchors.top: parent.top
@@ -141,11 +140,11 @@ Item {
         }
 
         Rectangle {
-            id: rectTopRight
+            id: a3
             x: 279
             width: 80
             height: 80
-            color: "#00000000"
+            color: "#000000"
             anchors.right: parent.right
             anchors.rightMargin: 190
             anchors.top: parent.top
@@ -160,11 +159,11 @@ Item {
         }
 
         Rectangle {
-            id: rectBottomLeft
+            id: c1
             y: 207
             width: 80
             height: 80
-            color: "#00000000"
+            color: "#000000"
             anchors.left: parent.left
             anchors.leftMargin: 190
             anchors.bottom: parent.bottom
@@ -179,12 +178,12 @@ Item {
         }
 
         Rectangle {
-            id: rectCenter1
+            id: c3
             x: 281
             y: 201
             width: 80
             height: 80
-            color: "#00000000"
+            color: "#000000"
             anchors.right: parent.right
             anchors.rightMargin: 190
             anchors.bottom: parent.bottom
@@ -195,6 +194,23 @@ Item {
                 height: 80
             }
             border.color: "#0e0c0c"
+            border.width: 5
+        }
+
+        Rectangle {
+            id: b1
+            x: 190
+            y: 270
+            width: 80
+            height: 80
+            color: "#000000"
+            MouseArea {
+                id: mouseArea1
+                width: 80
+                height: 80
+            }
+            border.color: "#0e0c0c"
+            anchors.verticalCenter: parent.verticalCenter
             border.width: 5
         }
     }

@@ -5,14 +5,10 @@ Compteur::Compteur(QObject *parent) : QObject(parent)
     fCompteur=10;
     cptChanged();
 }
-
-QString Compteur::readCompteur()
-{
-    return QString::number(fCompteur);
 }
 
 void kase::colorChanged() {
-
+ coordonnee.color=m_color;
 }
 
 void Compteur::decrement() {

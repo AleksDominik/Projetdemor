@@ -10,15 +10,16 @@ class kase : public QObject
 
 Q_INVOKABLE void joueur1();
 Q_INVOKABLE void joueur2();
-    
+void colorChanged();
+void textChanged(const QString &newText);
+QObject:: kase(int a, int c)  ; 
 signals:
-    void colorChanged();
-     void spacingChanged();
-      void textChanged(const QString &newText);
+    
+    
 private:
  QColor  m_color;
- int coordonnee; 
-}
+ String coordonnee ;  
+
 
 
 #endif // MORPION_H
