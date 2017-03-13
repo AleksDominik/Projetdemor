@@ -2,8 +2,9 @@
 
 
 void kase::colorChanged() {
- coordonnee.color=m_color;
+ PropertyChanges{
+    target:fondM.'coodonee'
+ color=m_color};
 }
-kase(string a):coordonnee(a)
+kase::kase(string a):coordonnee(a)
 {}
-
