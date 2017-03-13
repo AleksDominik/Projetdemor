@@ -4,7 +4,8 @@ QT += qml quick
 
 CONFIG += c++11
 
-SOURCES += main.cpp
+SOURCES += main.cpp \
+    morpion.cpp
 
 RESOURCES += qml.qrc
 
