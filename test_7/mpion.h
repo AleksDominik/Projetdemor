@@ -11,7 +11,6 @@ public:
     explicit Mpion(QObject *parent = 0);
     Q_INVOKABLE QString changementdim(int x,int y);
     Q_INVOKABLE bool peujouer();
-    Q_INVOKABLE void testermat();
 
 
 
@@ -20,9 +19,12 @@ public:
 
 signals:
     void imgChanged();
+    void jo1();
 
 public slots:
-    //QString  changementdim();
+     void testermat();
+     Qstring
+
 
 private:
     QString image1= "p1.jpg";
