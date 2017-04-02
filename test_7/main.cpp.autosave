@@ -1,0 +1,22 @@
+#include <QApplication>
+#include <QQmlApplicationEngine>
+#include <QtQml>
+
+#include "mpion.h"
+
+int main(int argc, char *argv[])
+{
+    QApplication app(argc, argv);
+
+    Mpion case1;
+
+    QQmlApplicationEngine engine;
+
+    engine.rootContext()->setContextProperty("vueObjImg11", &case11);
+
+    engine.load(QUrl(QStringLiteral("qrc:/main.qml")));
+    QObject::connect(&a, SIGNAL(valueChanged(int)),
+                        &b, SLOT(setValue(int)));
+
+    return app.exec();
+}

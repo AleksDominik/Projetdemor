@@ -4,7 +4,6 @@ Mpion::Mpion(QObject *parent) : QObject(parent) {
     image1="p1.jpg";
     image2="p2.jpg";
     i=0;
-    //j=0;
     imgChanged();
 
 }
@@ -32,6 +31,7 @@ QString Mpion::changementdim(int x,int y)
            { tabpre[x][y]=1;
              sum1++;
              i++;
+             emit imgChanged();
              return image1;
            }
 
@@ -86,28 +86,3 @@ QString Mpion::changementdim(int x,int y)
 
     }
 
-
-/*void Mpion:: remplitlamat(int a, int b)
-{
-    if(i%2==0){
-        if(peujouer()){
-            tabpre[a][b]=1;
-            }
-        else{
-            tab[a][b]=0;
-        }
-
-
-    }
-    else{
-        if(peujouer()){
-            tabpre[a][b]=2;
-            }
-        else{
-            tab[a][b]=0;
-        }
-    }
-    matricechanger();
-
-
-}*/
