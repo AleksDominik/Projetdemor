@@ -2,7 +2,12 @@
     <qresource prefix="/">
         <file>main.qml</file>
         <file>MainForm.ui.qml</file>
+        <file>bg.jpg</file>
+        <file>bg0.jpg</file>
+        <file>p0.jpg</file>
         <file>p1.jpg</file>
         <file>p2.jpg</file>
+        <file>jeu.mp3</file>
+        <file>winner.mp3</file>
     </qresource>
 </RCC>
