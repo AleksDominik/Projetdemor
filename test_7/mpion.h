@@ -23,7 +23,7 @@ signals:
 
 public slots:
      void testermat();
-     Qstring
+    // Qstring
 
 
 private:

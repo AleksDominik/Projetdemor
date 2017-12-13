@@ -21,8 +21,8 @@ QT_BEGIN_MOC_NAMESPACE
 QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 struct qt_meta_stringdata_Mpion_t {
-    QByteArrayData data[9];
-    char stringdata0[67];
+    QByteArrayData data[10];
+    char stringdata0[66];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -34,15 +34,16 @@ static const qt_meta_stringdata_Mpion_t qt_meta_stringdata_Mpion = {
 QT_MOC_LITERAL(0, 0, 5), // "Mpion"
 QT_MOC_LITERAL(1, 6, 10), // "imgChanged"
 QT_MOC_LITERAL(2, 17, 0), // ""
-QT_MOC_LITERAL(3, 18, 14), // "matricechanger"
-QT_MOC_LITERAL(4, 33, 13), // "changementdim"
-QT_MOC_LITERAL(5, 47, 1), // "x"
-QT_MOC_LITERAL(6, 49, 1), // "y"
-QT_MOC_LITERAL(7, 51, 8), // "peujouer"
-QT_MOC_LITERAL(8, 60, 6) // "imgQML"
+QT_MOC_LITERAL(3, 18, 3), // "jo1"
+QT_MOC_LITERAL(4, 22, 9), // "testermat"
+QT_MOC_LITERAL(5, 32, 13), // "changementdim"
+QT_MOC_LITERAL(6, 46, 1), // "x"
+QT_MOC_LITERAL(7, 48, 1), // "y"
+QT_MOC_LITERAL(8, 50, 8), // "peujouer"
+QT_MOC_LITERAL(9, 59, 6) // "imgQML"
 
     },
-    "Mpion\0imgChanged\0\0matricechanger\0"
+    "Mpion\0imgChanged\0\0jo1\0testermat\0"
     "changementdim\0x\0y\0peujouer\0imgQML"
 };
 #undef QT_MOC_LITERAL
@@ -53,31 +54,37 @@ static const uint qt_meta_data_Mpion[] = {
        7,       // revision
        0,       // classname
        0,    0, // classinfo
-       4,   14, // methods
-       1,   42, // properties
+       5,   14, // methods
+       1,   48, // properties
        0,    0, // enums/sets
        0,    0, // constructors
        0,       // flags
        2,       // signalCount
 
  // signals: name, argc, parameters, tag, flags
-       1,    0,   34,    2, 0x06 /* Public */,
-       3,    0,   35,    2, 0x06 /* Public */,
+       1,    0,   39,    2, 0x06 /* Public */,
+       3,    0,   40,    2, 0x06 /* Public */,
+
+ // slots: name, argc, parameters, tag, flags
+       4,    0,   41,    2, 0x0a /* Public */,
 
  // methods: name, argc, parameters, tag, flags
-       4,    2,   36,    2, 0x02 /* Public */,
-       7,    0,   41,    2, 0x02 /* Public */,
+       5,    2,   42,    2, 0x02 /* Public */,
+       8,    0,   47,    2, 0x02 /* Public */,
 
  // signals: parameters
     QMetaType::Void,
     QMetaType::Void,
 
+ // slots: parameters
+    QMetaType::Void,
+
  // methods: parameters
-    QMetaType::QString, QMetaType::Int, QMetaType::Int,    5,    6,
+    QMetaType::QString, QMetaType::Int, QMetaType::Int,    6,    7,
     QMetaType::Bool,
 
  // properties: name, type, flags
-       8, QMetaType::QString, 0x00495001,
+       9, QMetaType::QString, 0x00495001,
 
  // properties: notify_signal_id
        0,
@@ -92,10 +99,11 @@ void Mpion::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void 
         Q_UNUSED(_t)
         switch (_id) {
         case 0: _t->imgChanged(); break;
-        case 1: _t->matricechanger(); break;
-        case 2: { QString _r = _t->changementdim((*reinterpret_cast< int(*)>(_a[1])),(*reinterpret_cast< int(*)>(_a[2])));
+        case 1: _t->jo1(); break;
+        case 2: _t->testermat(); break;
+        case 3: { QString _r = _t->changementdim((*reinterpret_cast< int(*)>(_a[1])),(*reinterpret_cast< int(*)>(_a[2])));
             if (_a[0]) *reinterpret_cast< QString*>(_a[0]) = _r; }  break;
-        case 3: { bool _r = _t->peujouer();
+        case 4: { bool _r = _t->peujouer();
             if (_a[0]) *reinterpret_cast< bool*>(_a[0]) = _r; }  break;
         default: ;
         }
@@ -111,7 +119,7 @@ void Mpion::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void 
         }
         {
             typedef void (Mpion::*_t)();
-            if (*reinterpret_cast<_t *>(func) == static_cast<_t>(&Mpion::matricechanger)) {
+            if (*reinterpret_cast<_t *>(func) == static_cast<_t>(&Mpion::jo1)) {
                 *result = 1;
                 return;
             }
@@ -157,13 +165,13 @@ int Mpion::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 4)
+        if (_id < 5)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 4;
+        _id -= 5;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 4)
+        if (_id < 5)
             *reinterpret_cast<int*>(_a[0]) = -1;
-        _id -= 4;
+        _id -= 5;
     }
 #ifndef QT_NO_PROPERTIES
    else if (_c == QMetaObject::ReadProperty || _c == QMetaObject::WriteProperty
@@ -192,7 +200,7 @@ void Mpion::imgChanged()
 }
 
 // SIGNAL 1
-void Mpion::matricechanger()
+void Mpion::jo1()
 {
     QMetaObject::activate(this, &staticMetaObject, 1, Q_NULLPTR);
 }
